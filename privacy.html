@@ -1,0 +1,34 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="index,follow"><title>Privacy Policy — SquareMap thing</title><style>
+:root { color-scheme: dark; font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif; }
+* {box-sizing:border-box} body{margin:0;background:#0e1520;color:#e6eaf1;line-height:1.7}
+main{width:min(760px,calc(100% - 36px));margin:38px auto 72px} nav{display:flex;gap:18px;flex-wrap:wrap;margin-bottom:34px;border-bottom:1px solid #344158;padding-bottom:18px}
+a{color:#84caff}nav a{font-weight:600;text-decoration:none} nav a:hover{text-decoration:underline}
+h1{font-size:2rem;line-height:1.2;margin-bottom:16px}h2{margin-top:32px;font-size:1.14rem;color:#f3f7fc}
+p,li{font-size:1rem}p{margin:12px 0}ul{padding-left:22px}li{margin:8px 0}strong{color:#fff}
+code{color:#a3e5d1;font-size:.93em}footer{border-top:1px solid #344158;color:#9cacc3;margin-top:44px;padding-top:18px;font-size:.88rem}
+.notice{color:#f7c37a;background:#352b1b;border:1px solid #70562f;padding:12px 16px;border-radius:8px;margin:20px 0}
+</style></head><body><main><nav><a href="index.html">SquareMap thing</a><a href="terms.html">Terms of Service</a><a href="privacy.html">Privacy Policy</a></nav><h1>Privacy Policy</h1>
+<p><strong>SquareMap thing</strong></p>
+<p><strong>Last updated: October 29, 2026</strong></p>
+<h2>1. Scope</h2>
+<p>This policy describes the data handled by SquareMap thing (the “Activity”), an independently operated Minecraft world-map viewer launched inside Discord. It covers the Activity&#x27;s authentication gateway and embedded squaremap viewer, not Discord&#x27;s own platform or other applications and bots used in the Minecraft server.</p>
+<h2>2. Information the Activity processes</h2>
+<ul>
+<li><strong>Discord account information:</strong> After you authorize the Activity, it receives your Discord user ID and username or display name to identify your session. It also checks the list of Discord servers available through the granted <code>guilds</code> OAuth scope to confirm membership in the designated server.</li>
+<li><strong>Authorization information:</strong> The Activity briefly exchanges a Discord OAuth authorization code for an access token, which it uses to verify identity and server membership and to authenticate the Discord embedded application.</li>
+<li><strong>Session information:</strong> The Activity creates a random session identifier stored in a secure, HTTP-only, partitioned browser cookie. Its backend temporarily associates the identifier with your Discord user ID, display name, and expiration time.</li>
+<li><strong>Minecraft map information:</strong> The Activity shows rendered terrain, and may show Minecraft usernames, locations, and world/dimension information for players made visible by squaremap. Map visibility depends on the Minecraft server&#x27;s squaremap configuration.</li>
+<li><strong>Technical requests:</strong> Loading the Activity sends ordinary network requests to its hosting and tunneling providers. Those providers may process connection metadata such as IP addresses and request timing according to their own policies.</li>
+</ul>
+<h2>3. Why this information is used</h2>
+<p>The Activity uses Discord account data solely to authorize access for members of the designated Discord server, maintain a temporary signed-in session, and display your name in the viewer. Minecraft map data is used to render the interactive map and player markers. The Activity does not use this information for advertising or sell it.</p>
+<h2>4. Storage and retention</h2>
+<p>The current Activity backend maintains authorization sessions <strong>in server memory</strong>, not in a persistent account database. Session records expire after <strong>eight hours by default</strong>, or sooner if the server process restarts. The browser cookie is configured for the same period. The current Activity code does not intentionally write a persistent history of individual map visits or player positions. Browser caches, the Minecraft/squaremap server, Discord, and hosting providers may retain other technical data independently.</p>
+<h2>5. Sharing and service providers</h2>
+<p>The Activity communicates with <strong>Discord</strong> for authentication and server-membership checks and with the Minecraft server&#x27;s <strong>squaremap</strong> service to load map tiles and visible player information. Its public HTTPS connection is provided through the configured tunnel service (currently Tailscale Funnel, if used by the operator). The published legal pages are hosted through GitHub Pages, if that hosting option is used. Each external service processes information under its own terms and privacy practices. The Activity operator does not sell personal information.</p>
+<h2>6. Security and visibility</h2>
+<p>The backend restricts map access to authenticated Discord members of the designated server. It uses short-lived session cookies and a server-side gateway rather than exposing the Minecraft server&#x27;s administration dashboard. However, no internet service can guarantee absolute security. Authorized users can still view, save, or share screenshots of any Minecraft locations visible to them.</p>
+<h2>7. Your choices and requests</h2>
+<p>You can stop using the Activity or revoke its access in your Discord account&#x27;s authorized applications settings. If you leave the designated Discord server, new authorization checks will prevent a new session, although an already-issued session may remain active until it expires. For questions or requests about data handled by the Activity operator, contact <strong>ibra2008.tawalbeh@outlook.com</strong>.</p>
+<h2>8. Policy updates</h2>
+<p>This policy may be revised to reflect changes in the Activity&#x27;s code, hosting, or data practices. The revision date at the top indicates the latest published version.</p><footer>SquareMap thing · Independent community Minecraft map Activity</footer></main></body></html>
